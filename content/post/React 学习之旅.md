@@ -20,8 +20,13 @@ vue 和 React 我都想学，但是好像骨子里面就不太愿意去学vue（
 
 花了很多时间打了一些无意义的比赛，在最近才结束，当我进入React的世界似乎无时无刻的提醒我需要去学习一下JavaScript以及ES6，所以在回家休息的日子里面狠狠地恶补了一些JavaScript的知识。
 
+ES6 [阮一峰的ES6教程](https://es6.ruanyifeng.com/) 
+
+JavaScript [JavaScript 基础](https://www.w3school.com.cn/js/index.asp)
+
 遇见了一篇有意思的文章 [淺談JavaScript的Promise](https://marco79423.net/articles/%E6%B7%BA%E8%AB%87-javascript-%E7%9A%84-promise) 狠狠地强调了追女孩子多么困难
 
-其中提到了另外一篇文章[CallBackHell 回调地狱](http://callbackhell.com/) 见识了什么是真正的回调地狱 哈哈哈
+其中提到了另外一篇文章 [CallBackHell 回调地狱](http://callbackhell.com/) 见识了什么是真正的回调地狱 哈哈哈
 
-这个逻辑不理上三四遍真的理不清楚
+这个逻辑不理上三四遍真的理不清楚。在之后的编程中我将尽量避免（尽量）
+
