@@ -90,7 +90,7 @@ export default function InvoiceStatus({ status }: { status: string }) {
 
 除了这些提到的方式之外 同时还支持我们自己去使用 Sass 或者 CSS-in-JS libraries 比方说 [styled-jsx](https://github.com/vercel/styled-jsx), [styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)和[emotion](https://github.com/vercel/next.js/tree/canary/examples/with-emotion).
 
-## 字体
+## 字体与图片
 
 大致就是介绍了一下 `Next.js` 与其他框架不同的是，他的字体文件将会在页面创建之初与其他静态资源文件一起被载到用户浏览器中，而并非采用了其他网站实现的异步加载其他字体由此达到更好的体验效果。 
 
@@ -134,7 +134,7 @@ export default function RootLayout({
 
 #### 本地字体
 
-
+[Doc](https://nextjs.org/docs/app/building-your-application/optimizing/fonts#local-fonts) 暂时不展开了 有兴趣再去了解
 
 #### Google 字体
 
@@ -156,9 +156,32 @@ export const notoserif = Noto_Serif_SC({
 })
 ```
 
-在
+### 图片
 
+首先需要将图片放入 `/public` 内，应用程序就能引用到。
 
+Next js 它封装了 `<Image>` 组件，大概就是为不同大小的屏幕做了适配，具体不展开需要去了解。
+
+## 布局与页面路由
+
+使用 `layout` 添加多个页面共享的部分，可以使其余页面部分渲染，而不是全部渲染。
+
+## 在页面之间导航
+
+### Link
+
+next 同样封装了 `Link` 组件
+
+只要页面上出现的`Link`组件那么页面将会被预载，使得页面的加载用户完全感知不到。
+
+### usePathname( )
+
+这是一个next独有的钩子函数，仅限于客户端的钩子函数，你需要在使用的文件顶部预先声明`'use client';`
+
+```tsx
+// 获取路径名称
+const pathname = usePathname();
+```
 
 
 
